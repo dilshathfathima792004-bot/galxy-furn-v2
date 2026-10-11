@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+/* GALXY FURN — Customer Profile */
+
+.customer-profile {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.customer-profile .header-login {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.customer-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  z-index: 10000;
+  width: 250px;
+  padding: 20px;
+  background: #241A16;
+  border: 1px solid #A87854;
+  color: #F5EBDD;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.customer-menu[hidden] {
+  display: none;
+}
+
+.customer-menu p {
+  margin: 0 0 12px;
+  overflow-wrap: anywhere;
+}
+
+.customer-menu p:first-child {
+  color: #F5EBDD;
+  font-weight: 600;
+}
+
+.customer-menu p:nth-child(2) {
+  color: #D6C8B8;
+  font-size: 13px;
+}
+
+.customer-menu button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  border: 1px solid #A87854;
+  background: #A87854;
+  color: #241A16;
+  font: inherit;
+  cursor: pointer;
+}
+
+.customer-menu button:hover {
+  background: #C98F62;
+}
